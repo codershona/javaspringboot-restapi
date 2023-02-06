@@ -76,6 +76,8 @@
 
 # Spring Boot Auto Configuration:
 
+* Configuration building Spring APP:
+
 
 # Spring Boot DevTools:
 
