@@ -76,7 +76,17 @@
 
 # Spring Boot Auto Configuration:
 
-* Configuration building Spring APP:
+* Configuration building Spring App:
+ * Component Scan, 
+ * DispatcherServlet, 
+ * Data Sources, 
+ * JSON Conversion
+
+* <b>How can I simplify this?</b>
+  * Auto configuration: Automated configuration for app:
+
+    * Which frameworks are in the Class Path?
+    * What is existing configuration (Annotations etc)?
 
 
 # Spring Boot DevTools:
