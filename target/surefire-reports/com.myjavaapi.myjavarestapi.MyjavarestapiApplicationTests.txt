@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.myjavaapi.myjavarestapi.MyjavarestapiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.043 s - in com.myjavaapi.myjavarestapi.MyjavarestapiApplicationTests
