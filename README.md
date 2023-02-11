@@ -121,7 +121,45 @@
 
 # Managing App. Configuration using Embedded Servers:
 
+* How do you deploy the application?
+  * WAR Approach (old)
+  * Step 1: Install Java
+  * Step 2: Install web/application server:
+    * Tomcat/WebSphere/WebLogic etc.
+  * Step 3: Deploy the application WAR(Web ARchive)
+    * This is old WAR Approach
+    * Complex to setup.
+    
+    * Run as Maven Build in the root project and type clean install and click run, which take time to complete.
+    * ```Building jar: /Users/<Username>/Documents/myjavarestapi/target/myjavarestapi-0.0.1-SNAPSHOT.jar```
+    * ```/Users/<Username>/Documents/myjavarestapi/target/myjavarestapi-0.0.1-SNAPSHOT.jar ```
+    * Close terminal and reopen again, In terminal go to :  ```cd /Users/<Username>/Documents/myjavarestapi/target/``` and then run ```ls```.
+    * Stop the port 8080 in the terminal browser, Then run ```java -jar myjavarestapi-0.0.1-SNAPSHOT.jar```  
+  
+  * <b>Embedded Server - Simpler Alternative:</b>
+     * Step 1: Install Java
+     * Step 2: Run JAR file
+     * Make JAR not WAR
+     * Embedded Server Examples:
+       * spring-boot-starter-tomcat
+       * spring-boot-starter-jetty
+       * spring-boot-starter-undertow
+     
+     * Run In MAC, Command + Shift + R to open resource.
+     * Go to pom.xml file and in ```spring-boot-starter-test``` with mouse press Command + Click to see tomcat setup.
+
 # Managing App. Configuration using Actuator:
+
+* Monitoring Applications using Spring Boot Actuator.
+  * Monitor and Manage the application in the production.
+  * Provides a number of endpoints:
+    * beans: Complete list of Spring beans in the app.
+    * health: Application health information.
+    * metrics - Application metrics.
+    * mappings - Details around Request Mappings.
+    
+    * Go to : ```http://localhost:8080/actuator```
+    
 
 # Understanding Spring Boot vs Spring Boot vs Spring MVC:
 
